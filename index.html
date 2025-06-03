@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALUNA: Interaktive Infografiken für KI-Beratungssystem</title>
+    <meta name="description" content="Interaktive Infografiken für das ALUNA KI-Beratungssystem - Systemtheoretische Ansätze mit moderner Technologie visualisiert.">
+    <meta name="keywords" content="ALUNA, KI-Beratung, Infografiken, Systemtheorie, Künstliche Intelligenz, Visualisierung">
+    <meta name="author" content="ALUNA Team">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-username.github.io/aluna-infografiken/">
+    <meta property="og:title" content="ALUNA: Interaktive Infografiken für KI-Beratungssystem">
+    <meta property="og:description" content="Interaktive Infografiken für das ALUNA KI-Beratungssystem mit systemtheoretischen Ansätzen und moderner Technologie.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="ALUNA: Interaktive Infografiken für KI-Beratungssystem">
+    <meta property="twitter:description" content="Interaktive Infografiken für das ALUNA KI-Beratungssystem mit systemtheoretischen Ansätzen und moderner Technologie.">
+    
+    <!-- Visualization & Content Choices:
+    - ALUNA Composition: Goal: Compare. Viz: Donut Chart (Chart.js). Justification: Instantly shows the three core pillars are synthesized into a whole.
+    - Theoretical Foundations: Goal: Organize. Viz: Card Grid (HTML/Tailwind). Justification: Clean, scannable way to present a list of key contributors without overwhelming the user.
+    - Methodology: Goal: Compare. Viz: Two-column layout (HTML/Tailwind). Justification: Directly contrasts the technological enablers with the humanistic therapeutic techniques.
+    - User Journey: Goal: Organize. Viz: Vertical Timeline (HTML/CSS). Justification: Best method for visualizing a linear process or sequence of events clearly.
+    - Question Toolkit: Goal: Compare. Viz: Radar Chart (Chart.js). Justification: Provides a multi-dimensional comparison of different question types, offering analytical depth beyond a simple list and creating an engaging "wow" factor.
+    - Impact: Goal: Inform. Viz: Icon-based Card Grid (Unicode/HTML). Justification: Summarizes the key benefits in a visually appealing and easily digestible format.
+    -->
+    
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-100 text-[#073B4C]">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-12 md:my-16">
+            <h1 class="text-4xl md:text-6xl font-black text-[#118AB2] uppercase">ALUNA</h1>
+            <p class="text-xl md:text-2xl mt-4 font-light text-gray-700">Eine KI-gestützte Revolution in der systemischen Beratung</p>
+            <p class="max-w-3xl mx-auto mt-2 text-gray-600 text-center leading-relaxed">Diese interaktive Anwendung analysiert ALUNA, eine App, die Kommunikation als zentralen Prozess nutzt, um Komplexität zu reduzieren und durch die Fusion von Systemtheorie und künstlicher Intelligenz sinnvolle Orientierung zu stiften.</p>
+        </header>
+
+        <main>
+            <section id="introduction" class="mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h2 class="text-2xl font-bold text-[#118AB2] mb-4">Was ist ALUNA?</h2>
+                        <p class="mb-4 text-justify leading-relaxed text-content">ALUNA ist eine innovative Beratungsanwendung, die auf systemtheoretischen und konstruktivistischen Ansätzen basiert. Sie operationalisiert komplexe Theorien in Form intelligenter Fragen, Übungen und lernender Dialogstrukturen. Das Ziel ist nicht, Probleme direkt zu lösen, sondern Denk- und Handlungsräume für den Nutzer zu erweitern.</p>
+                        <p class="text-justify leading-relaxed text-content">Durch die intelligente Verknüpfung von etablierten psychologischen Konzepten mit moderner KI-Forschung wird ein einzigartiger, systemisch inspirierter Resonanzraum für individuelle Entwicklung geschaffen.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 chart-container">
+                        <canvas id="compositionChart" aria-label="ALUNA Komposition Diagramm"></canvas>
+                    </div>
+                </div>
+                <div class="mt-4 text-gray-600">
+                    <p class="max-w-4xl mx-auto text-justify leading-relaxed text-content px-4">Die Grafik veranschaulicht die drei Kernsäulen von ALUNA. Sie zeigt, dass die Anwendung zu gleichen Teilen auf einem robusten theoretischen Fundament, einer vielschichtigen Methodik und fortschrittlicher Technologie aufbaut, um ein ganzheitliches Beratungserlebnis zu schaffen.</p>
+                </div>
+            </section>
+            
+            <section id="foundations" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center text-[#118AB2] mb-2">Das theoretische Fundament</h2>
+                <p class="text-gray-600 mb-8 max-w-3xl mx-auto text-justify leading-relaxed text-content">ALUNA integriert die Konzepte zahlreicher einflussreicher Denker. Diese vielschichtige Basis ermöglicht es, menschliche Kommunikation und Interaktion aus verschiedenen Perspektiven zu betrachten und so eine tiefgreifende, reflexive Beratung zu ermöglichen.</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="border-l-4 border-[#FF6B6B] p-4 bg-red-50 rounded-r-lg">
+                        <h3 class="font-bold">Niklas Luhmann</h3>
+                        <p class="text-sm">Kommunikation als autopoietische Struktur.</p>
+                    </div>
+                    <div class="border-l-4 border-[#FFD166] p-4 bg-yellow-50 rounded-r-lg">
+                        <h3 class="font-bold">Humberto Maturana</h3>
+                        <p class="text-sm">Kommunikation als lebendiger Koordinationsprozess.</p>
+                    </div>
+                    <div class="border-l-4 border-[#06D6A0] p-4 bg-green-50 rounded-r-lg">
+                        <h3 class="font-bold">Gregory Bateson</h3>
+                        <p class="text-sm">Muster, Differenzen und kybernetische Schleifen.</p>
+                    </div>
+                    <div class="border-l-4 border-[#118AB2] p-4 bg-blue-50 rounded-r-lg">
+                        <h3 class="font-bold">Paul Watzlawick</h3>
+                        <p class="text-sm">Pragmatik, Beziehung und Kontext der Kommunikation.</p>
+                    </div>
+                    <div class="border-l-4 border-[#073B4C] p-4 bg-gray-100 rounded-r-lg">
+                        <h3 class="font-bold">Virginia Satir</h3>
+                        <p class="text-sm">Wachstum, Kongruenz und familiäre Ressourcen.</p>
+                    </div>
+                    <div class="border-l-4 border-[#FF6B6B] p-4 bg-red-50 rounded-r-lg">
+                        <h3 class="font-bold">Heinz von Foerster</h3>
+                        <p class="text-sm">Beobachtung zweiter Ordnung und Perspektivität.</p>
+                    </div>
+                    <div class="border-l-4 border-[#FFD166] p-4 bg-yellow-50 rounded-r-lg">
+                        <h3 class="font-bold">Ernst von Glasersfeld</h3>
+                        <p class="text-sm">Radikaler Konstruktivismus.</p>
+                    </div>
+                    <div class="border-l-4 border-[#06D6A0] p-4 bg-green-50 rounded-r-lg">
+                        <h3 class="font-bold">Jürgen Habermas</h3>
+                        <p class="text-sm">Normativität und Verständigung.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="methodology" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center text-[#118AB2] mb-2">Die ALUNA-Methode: Eine Fusion</h2>
+                <p class="text-gray-600 mb-8 max-w-3xl mx-auto text-justify leading-relaxed text-content">ALUNA kombiniert systemische Beratungstechniken mit moderner KI, um einen dynamischen und adaptiven Dialog zu schaffen. Diese Symbiose ermöglicht eine personalisierte und effektive Begleitung des Nutzers.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-[#06D6A0]">Technologische Umsetzung</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-green-50 rounded-lg">
+                                <h4 class="font-bold">Natürliche Sprachverarbeitung (NLP)</h4>
+                                <p class="text-justify leading-relaxed text-content">Versteht semantische und syntaktische Nuancen, um individuelle Reaktionsmuster zu analysieren und zu begleiten.</p>
+                            </div>
+                            <div class="p-4 bg-green-50 rounded-lg">
+                                <h4 class="font-bold">Maschinelles Lernen (ML)</h4>
+                                <p class="text-justify leading-relaxed text-content">Lernt aus wiederkehrenden Mustern und passt sich adaptiv an bevorzugte Denkstile oder emotionale Zustände des Nutzers an.</p>
+                            </div>
+                            <div class="p-4 bg-green-50 rounded-lg">
+                                <h4 class="font-bold">Emotionale Intelligenz</h4>
+                                <p class="text-justify leading-relaxed text-content">Wird trainiert, emotionale Signale zu erkennen und mit kontextsensitiven Fragen feinfühlig darauf zu reagieren.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-[#FF6B6B]">Systemische Interventionen</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-red-50 rounded-lg">
+                                <h4 class="font-bold">Intelligente Fragen</h4>
+                                <p class="text-justify leading-relaxed text-content">Fragen fokussieren relevante Elemente eines Problems und fördern die Differenzierung, z.B. zwischen privatem und beruflichem Kontext.</p>
+                            </div>
+                            <div class="p-4 bg-red-50 rounded-lg">
+                                <h4 class="font-bold">Systemische Übungen</h4>
+                                <p class="text-justify leading-relaxed text-content">Tools wie Timeline oder Genogramm helfen, Ordnung in Erfahrungen zu bringen und wiederkehrende Dynamiken zu erkennen.</p>
+                            </div>
+                            <div class="p-4 bg-red-50 rounded-lg">
+                                <h4 class="font-bold">Lernende Dialogstrukturen</h4>
+                                <p class="text-justify leading-relaxed text-content">Jede Interaktion wird als kommunikativer Akt verstanden, der das System "Beratung" fortschreibt und neue Anschlusskommunikation ermöglicht.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="journey" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center text-[#118AB2] mb-2">Die Nutzerreise: Struktur einer systemischen Sitzung</h2>
+                <p class="text-gray-600 mb-8 max-w-3xl mx-auto text-justify leading-relaxed text-content">ALUNA führt den Nutzer durch einen strukturierten, aber flexiblen Prozess, der einer typischen systemischen Beratungssitzung nachempfunden ist. Dieses Vorgehen schafft einen klaren Rahmen für die Exploration und Lösungsfindung.</p>
+                <div class="relative pl-10">
+                    <div class="absolute left-4 top-0 bottom-0 border-l-2 border-dashed border-[#118AB2]"></div>
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-10 top-0 w-8 h-8 bg-[#118AB2] text-white font-bold rounded-full flex items-center justify-center">1</div>
+                        <h3 class="font-bold text-lg">Einstieg & Begrüßung</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Aufbau einer vertrauensvollen Atmosphäre und Klärung des Anliegens.</p>
+                    </div>
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-10 top-0 w-8 h-8 bg-[#118AB2] text-white font-bold rounded-full flex items-center justify-center">2</div>
+                        <h3 class="font-bold text-lg">Auftragsklärung & Zieldefinition</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Gemeinsames Festlegen eines konkreten, lösungsorientierten Ziels.</p>
+                    </div>
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-10 top-0 w-8 h-8 bg-[#118AB2] text-white font-bold rounded-full flex items-center justify-center">3</div>
+                        <h3 class="font-bold text-lg">Systemische Exploration</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Betrachtung des Problems im Kontext von Beziehungen und Interaktionen.</p>
+                    </div>
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-10 top-0 w-8 h-8 bg-[#118AB2] text-white font-bold rounded-full flex items-center justify-center">4</div>
+                        <h3 class="font-bold text-lg">Intervention & Perspektiverweiterung</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Förderung neuer Einsichten durch gezielte systemische Interventionen.</p>
+                    </div>
+                    <div class="mb-8 relative">
+                        <div class="absolute -left-10 top-0 w-8 h-8 bg-[#118AB2] text-white font-bold rounded-full flex items-center justify-center">5</div>
+                        <h3 class="font-bold text-lg">Lösungsfindung & Maßnahmenplanung</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Konkretisierung möglicher Lösungsansätze und erster Schritte.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-10 top-0 w-8 h-8 bg-[#118AB2] text-white font-bold rounded-full flex items-center justify-center">6</div>
+                        <h3 class="font-bold text-lg">Abschluss & Reflektion</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Zusammenfassung der Erkenntnisse und Vereinbarung zur Nachbereitung.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="toolkit" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center text-[#118AB2] mb-2">Das Fragen-Toolkit: Ein multidimensionaler Ansatz</h2>
+                <p class="text-gray-600 mb-8 max-w-3xl mx-auto text-justify leading-relaxed text-content">ALUNA nutzt verschiedene Fragetechniken, um den Nutzer auf seinem Weg zu begleiten. Jede Kategorie erfüllt einen spezifischen Zweck im systemischen Beratungsprozess und ermöglicht eine tiefgreifende Exploration verschiedener Aspekte.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="chart-container">
+                        <canvas id="toolkitChart" aria-label="Fragen-Toolkit Radar Chart"></canvas>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-blue-50 rounded-lg">
+                            <h4 class="font-bold text-[#118AB2]">Zirkuläre Fragen</h4>
+                            <p class="text-justify leading-relaxed text-content">Erkunden Beziehungsdynamiken und Perspektiven anderer Beteiligter.</p>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-lg">
+                            <h4 class="font-bold text-[#06D6A0]">Lösungsorientierte Fragen</h4>
+                            <p class="text-justify leading-relaxed text-content">Fokussieren auf Ressourcen, Ausnahmen und mögliche Lösungswege.</p>
+                        </div>
+                        <div class="p-4 bg-red-50 rounded-lg">
+                            <h4 class="font-bold text-[#FF6B6B]">Hypothetische Fragen</h4>
+                            <p class="text-justify leading-relaxed text-content">Öffnen Räume für neue Möglichkeiten und alternative Szenarien.</p>
+                        </div>
+                        <div class="p-4 bg-yellow-50 rounded-lg">
+                            <h4 class="font-bold text-[#FFD166]">Reflexive Fragen</h4>
+                            <p class="text-justify leading-relaxed text-content">Fördern Selbstreflexion und bewusstes Nachdenken über eigene Muster.</p>
+                        </div>
+                        <div class="p-4 bg-purple-50 rounded-lg">
+                            <h4 class="font-bold text-purple-600">Skalierungsfragen</h4>
+                            <p class="text-justify leading-relaxed text-content">Ermöglichen Bewertung und Messung von Veränderungen und Fortschritten.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="impact" class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-center text-[#118AB2] mb-2">Die Wirkung von ALUNA</h2>
+                <p class="text-gray-600 mb-8 max-w-3xl mx-auto text-justify leading-relaxed text-content">ALUNA schafft einen nachhaltigen Mehrwert für Nutzer, indem es moderne Technologie mit bewährten Beratungsansätzen verbindet. Die Anwendung unterstützt persönliche Entwicklung und systemisches Denken auf verschiedenen Ebenen.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="text-center p-6 bg-blue-50 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-[#118AB2] to-[#06D6A0] rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-[#118AB2]">Klarheit & Fokus</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Strukturierte Exploration hilft bei der Identifikation von Kernthemen und Prioritäten.</p>
+                    </div>
+                    <div class="text-center p-6 bg-green-50 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-[#06D6A0] to-[#FFD166] rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-[#06D6A0]">Perspektivenwechsel</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Systemische Fragen eröffnen neue Sichtweisen auf bestehende Herausforderungen.</p>
+                    </div>
+                    <div class="text-center p-6 bg-yellow-50 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-[#FFD166] to-[#FF6B6B] rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-[#FFD166]">Eigenverantwortung</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Lösungsorientierte Ansätze stärken die Selbstwirksamkeit des Nutzers.</p>
+                    </div>
+                    <div class="text-center p-6 bg-red-50 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-[#FF6B6B] to-[#073B4C] rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-[#FF6B6B]">Nachhaltiges Lernen</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Reflexive Prozesse fördern langfristige Entwicklung und Wachstum.</p>
+                    </div>
+                    <div class="text-center p-6 bg-purple-50 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-[#073B4C] to-[#118AB2] rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-[#073B4C]">Beziehungsqualität</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Verbesserte Kommunikation und Verständnis in zwischenmenschlichen Beziehungen.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-[#118AB2] to-[#073B4C] rounded-xl flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-[#118AB2]">Balance & Integration</h3>
+                        <p class="text-gray-700 text-justify leading-relaxed text-content">Harmonische Verbindung verschiedener Lebensbereiche und -aspekte.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center py-8 mt-16 border-t border-gray-300">
+            <p class="text-gray-600">@ 2025 Aluna-KairosShift KI Labs. Eine innovative Verbindung von Systemtheorie und künstlicher Intelligenz.</p>
+            <p class="text-sm text-gray-500 mt-2">Entwickelt für eine bessere Beratungserfahrung.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

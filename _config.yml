@@ -1,0 +1,195 @@
+# ALUNA Documentation Site Configuration for GitHub Pages
+
+# Site settings
+title: "ALUNA: Interaktive Infografiken"
+description: "Interaktive Infografiken für das ALUNA KI-Beratungssystem - Eine innovative Anwendung, die Kommunikation als zentralen Prozess nutzt"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://your-username.github.io" # Replace with your actual GitHub Pages URL
+
+# GitHub Pages settings
+repository: your-username/aluna-infografiken # Replace with your actual repository
+
+# Language and locale
+lang: de
+locale: de_DE
+
+# Author information
+author:
+  name: ALUNA Team
+  email: info@aluna.example.com # Replace with actual email
+
+# SEO settings
+seo:
+  name: ALUNA
+  type: WebSite
+  links:
+    - https://github.com/your-username/aluna-infografiken
+
+# Social media and sharing
+social:
+  name: ALUNA
+  links:
+    - https://github.com/your-username/aluna-infografiken
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# GitHub Pages specific settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - .jekyll-cache
+
+# Include files that would normally be excluded
+include:
+  - _pages
+
+# Collections (if needed for future expansion)
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Default front matter values
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "ALUNA Team"
+
+# Sass configuration
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Compression settings for GitHub Pages
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: development
+
+# Analytics (uncomment and configure if needed)
+# google_analytics: UA-XXXXXXXX-X
+
+# CDN and external resources
+cdn:
+  tailwind: "https://cdn.tailwindcss.com"
+  chartjs: "https://cdn.jsdelivr.net/npm/chart.js"
+  fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+
+# Site navigation (for future use)
+navigation:
+  - name: "Was ist ALUNA?"
+    url: "#introduction"
+  - name: "Theoretisches Fundament"
+    url: "#foundations"
+  - name: "Methodik"
+    url: "#methodology"
+  - name: "Nutzerreise"
+    url: "#journey"
+  - name: "Fragen-Toolkit"
+    url: "#toolkit"
+  - name: "Wirkung"
+    url: "#impact"
+
+# Feature flags
+features:
+  charts: true
+  animations: true
+  accessibility: true
+  analytics: false
+
+# Performance settings
+performance:
+  lazy_loading: true
+  image_optimization: true
+  css_minification: true
+  js_minification: true
+
+# Content settings
+content:
+  show_edit_page: false
+  show_last_modified: false
+  enable_search: false
+
+# Theme and styling
+theme_config:
+  primary_color: "#118AB2"
+  secondary_color: "#073B4C"
+  accent_colors:
+    red: "#FF6B6B"
+    yellow: "#FFD166"
+    green: "#06D6A0"
+  font_family: "Inter"
+
+# GitHub Pages environment
+environment: production
+
+# Timezone
+timezone: Europe/Berlin
+
+# Encoding
+encoding: utf-8
+
+# Liquid settings
+liquid:
+  error_mode: warn
+  strict_filters: false
+  strict_variables: false
+
+# Markdown settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Plugin configuration
+feed:
+  path: atom.xml
+
+sitemap:
+  file: "/sitemap.xml"
+  exclude:
+    - "/404.html"
+
+# Security headers (for advanced GitHub Pages setups)
+security:
+  csp: false
+  hsts: false
+
+# Cache control
+cache:
+  enabled: true
+  max_age: 3600
+
+# Development settings (ignored in production)
+development:
+  show_drafts: false
+  future: false
+  unpublished: false
+  livereload: false

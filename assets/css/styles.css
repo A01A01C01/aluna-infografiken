@@ -1,0 +1,271 @@
+/* ALUNA Documentation Styles */
+
+/* Custom Properties */
+:root {
+    --color-primary: #118AB2;
+    --color-secondary: #073B4C;
+    --color-accent-red: #FF6B6B;
+    --color-accent-yellow: #FFD166;
+    --color-accent-green: #06D6A0;
+    --color-text-light: #6B7280;
+    --color-bg-light: #F9FAFB;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Improvements */
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    word-spacing: -0.05em;
+    letter-spacing: 0.01em;
+}
+
+/* Better paragraph spacing and readability */
+p {
+    margin-bottom: 1rem;
+}
+
+.leading-relaxed {
+    line-height: 1.75;
+}
+
+/* Improved text rendering */
+.text-content {
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+}
+
+/* Chart Container Styles */
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90vw;
+    max-height: 500px;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 400px;
+    }
+}
+
+/* Responsive Chart for Toolkit Section */
+#toolkit .chart-container {
+    max-width: 500px;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    #toolkit .chart-container {
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Timeline Enhancements */
+.timeline-item {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(4px);
+}
+
+/* Card Hover Effects */
+.foundation-card,
+.methodology-card,
+.impact-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.foundation-card:hover,
+.methodology-card:hover,
+.impact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Spacing */
+section {
+    scroll-margin-top: 2rem;
+}
+
+/* Loading Animation */
+.chart-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
+.chart-loading::after {
+    content: '...';
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        color: rgba(0,0,0,0);
+        text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0);
+    }
+    40% {
+        color: var(--color-text-light);
+        text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0);
+    }
+    60% {
+        text-shadow: .25em 0 0 var(--color-text-light), .5em 0 0 rgba(0,0,0,0);
+    }
+    80%, 100% {
+        text-shadow: .25em 0 0 var(--color-text-light), .5em 0 0 var(--color-text-light);
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Focus Styles */
+button:focus,
+a:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .chart-container {
+        height: 300px !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .bg-gray-100 {
+        background: white !important;
+    }
+    
+    .shadow-md {
+        box-shadow: none !important;
+        border: 1px solid #e5e7eb !important;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    h2 {
+        font-size: 1.75rem !important;
+    }
+    
+    .text-xl {
+        font-size: 1.125rem !important;
+    }
+}
+
+/* Enhanced Grid Layouts */
+.foundation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    .foundation-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Chart Responsive Behavior */
+.chart-responsive {
+    position: relative;
+    height: 0;
+    padding-bottom: 75%; /* 4:3 Aspect Ratio */
+}
+
+.chart-responsive canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Mobile Navigation Enhancement */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .grid {
+        gap: 1rem;
+    }
+    
+    .p-6 {
+        padding: 1.25rem;
+    }
+    
+    .md\\:p-8 {
+        padding: 1.25rem;
+    }
+}
