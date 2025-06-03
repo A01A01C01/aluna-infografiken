@@ -14,9 +14,7 @@ Diese Website bietet eine interaktive Analyse der ALUNA-Anwendung mit:
 
 ## 🚀 Live Demo
 
-Die Website wird verfügbar sein unter: `https://YOUR_USERNAME.github.io/aluna-infografiken`
-
-(Ersetzen Sie YOUR_USERNAME durch Ihren GitHub-Benutzernamen)
+Die Website wird verfügbar sein unter: `https://A01A01C01.github.io/aluna-infografiken`
 
 ## ✨ Features
 
